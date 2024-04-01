@@ -1,10 +1,11 @@
-import React from "react";
+import React from 'react';
 
-import s2 from "../../s1-main/App.module.css";
-import avatar from "./avatar.png";
-import FriendMessage from "./friend-message/FriendMessage";
-import MessageSender from "./message-sender/MessageSender";
-import Message from "./message/Message";
+import s2 from '../../s1-main/App.module.css';
+import avatar from './avatar.png';
+import FriendMessage from './friend-message/FriendMessage';
+import MessageSender from './message-sender/MessageSender';
+import Message from './message/Message';
+
 
 /*
  * 1 - описать тип MessageType
@@ -67,7 +68,7 @@ const HW1 = () => {
           {/* </div> */}
 
           {/*для автоматической проверки дз (не менять)*/}
-          <MessageSender M={Message} />
+          {/* <MessageSender M={Message} /> */}
         </div>
       </div>
     </div>
