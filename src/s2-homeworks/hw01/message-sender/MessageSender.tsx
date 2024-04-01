@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { ChangeEventHandler, useEffect, useRef, useState } from "react";
 
 import { message0 } from "../HW1";
 import s from "./MessageSender.module.css";
@@ -10,7 +10,7 @@ const MessageSender = (props: any) => {
   const [messages, setMessages] = useState<any[]>([]);
   const [text, setText] = useState<any>("");
 
-  const onChange = (e: any) => {
+  const onChange: ChangeEventHandler<HTMLTextAreaElement> = (e) => {
     setText(e.currentTarget.value);
   };
 
