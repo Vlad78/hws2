@@ -1,9 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import { AffairType } from '../../HW2';
-import s2 from '../Affairs.module.css';
-import s from './Affair.module.css';
-
+import { AffairType } from "../../HW2";
+import s2 from "../Affairs.module.css";
+import s from "./Affair.module.css";
 
 type AffairPropsType = {
   affair: AffairType;
@@ -33,6 +32,7 @@ function Affair(props: AffairPropsType) {
         className={buttonClass}
         onClick={deleteCallback}
       >
+        э
         <svg
           width="13"
           height="12"
