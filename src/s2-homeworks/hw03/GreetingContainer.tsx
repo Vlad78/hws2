@@ -1,16 +1,11 @@
 import React, {
-  ChangeEvent,
-  ChangeEventHandler,
-  Dispatch,
-  KeyboardEvent,
-  KeyboardEventHandler,
-  MouseEventHandler,
-  SetStateAction,
-  useState,
-} from "react";
+    ChangeEvent, ChangeEventHandler, Dispatch, KeyboardEvent, KeyboardEventHandler,
+    MouseEventHandler, SetStateAction, useEffect, useState
+} from 'react';
 
-import Greeting from "./Greeting";
-import { UserType } from "./HW3";
+import Greeting from './Greeting';
+import { UserType } from './HW3';
+
 
 type GreetingContainerPropsType = {
   users: UserType[]; // need to fix any
