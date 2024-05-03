@@ -1,11 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import s2 from '../../s1-main/App.module.css';
-import avatar from './avatar.png';
-import FriendMessage from './friend-message/FriendMessage';
-import MessageSender from './message-sender/MessageSender';
-import Message from './message/Message';
-
+import s2 from "../../s1-main/App.module.css";
+import avatar from "./avatar.png";
+import FriendMessage from "./friend-message/FriendMessage";
+import MessageSender from "./message-sender/MessageSender";
+import Message from "./message/Message";
 
 /*
  * 1 - описать тип MessageType
@@ -54,7 +53,7 @@ export const friendMessage0: MessageType = {
 
 const HW1 = () => {
   return (
-    <div id={"hw1"}>
+    <div id={"hw1"} style={{ marginTop: 107 }}>
       <div className={s2.container}>
         <div className={s2.hwTitle}>Homework #1</div>
       </div>
