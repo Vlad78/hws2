@@ -1,5 +1,4 @@
-import { UserType } from '../HW8';
-
+import { UserType } from "../HW8";
 
 type ActionType = { type: "sort"; payload: "up" | "down" } | { type: "check"; payload: number };
 
@@ -14,7 +13,8 @@ export const homeWorkReducer = (state: UserType[], action: ActionType): UserType
       // need to fix
     }
     case "check": {
-      return state.filter((e) => e.age >= 18); // need to fix
+      const y = state.filter((e) => e.age >= 18).reverse();
+      return y;
     }
     default:
       return state;
