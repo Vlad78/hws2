@@ -1,9 +1,12 @@
 .radio {
+  accent-color: #000;
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
 }
 
 .radio::before {
 }
-
 
 .radio:checked::before {
 }
@@ -12,4 +15,16 @@
 }
 
 .options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.span {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+  margin-left: 13px;
 }
