@@ -16,6 +16,7 @@
 }
 
 .disabled {
+  opacity: 40%;
 }
 
 .secondary {
