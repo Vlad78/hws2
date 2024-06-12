@@ -26,7 +26,7 @@ const HW10 = () => {
     // dispatch
     // setTimeout
     dispatch(loadingAC(true));
-    setTimeout(() => dispatch(loadingAC(false)), 1500);
+    setTimeout(() => dispatch(loadingAC(false)), 3500);
   };
 
   return (
@@ -37,15 +37,18 @@ const HW10 = () => {
       <hr />
       <div className={s2.container}>
         <div className={s2.hw}>
-          {isLoading ? (
-            <div id={"hw10-loading"}>
-              <Loader />
-            </div>
-          ) : (
-            <SuperButton id={"hw10-button-start-loading"} onClick={setLoading}>
-              Set loading...
-            </SuperButton>
-          )}
+          {" "}
+          <div>
+            {isLoading ? (
+              <div id={"hw10-loading"}>
+                <Loader />
+              </div>
+            ) : (
+              <SuperButton id={"hw10-button-start-loading"} onClick={setLoading}>
+                Set loading...
+              </SuperButton>
+            )}
+          </div>
         </div>
       </div>
     </div>
