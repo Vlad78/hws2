@@ -40,6 +40,7 @@ function HW11() {
       <div className={s2.container}>
         <div className={s2.hwTitle}>Homework #11</div>
       </div>
+      <hr />
       <div className={s2.container}>
         <div className={s2.hw}>
           <div className={s.container}>
