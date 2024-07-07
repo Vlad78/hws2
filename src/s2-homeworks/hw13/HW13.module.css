@@ -5,8 +5,10 @@
 }
 
 .responseContainer {
+  min-height: 316px;
   display: flex;
   align-items: center;
+  gap: 25px;
   justify-content: space-around;
 }
 
