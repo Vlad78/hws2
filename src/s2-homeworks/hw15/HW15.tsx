@@ -1,11 +1,12 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 
-import s2 from "../../s1-main/App.module.css";
-import SuperSort from "./common/c10-SuperSort/SuperSort";
-import SuperPagination from "./common/c9-SuperPagination/SuperPagination";
-import s from "./HW15.module.css";
+import s2 from '../../s1-main/App.module.css';
+import SuperSort from './common/c10-SuperSort/SuperSort';
+import SuperPagination from './common/c9-SuperPagination/SuperPagination';
+import s from './HW15.module.css';
+
 
 /*
  * 1 - дописать SuperPagination
@@ -23,7 +24,7 @@ type TechType = {
 };
 
 type ParamsType = {
-  sort?: string;
+  sort: string;
   page: number;
   count: number;
 };
@@ -49,10 +50,8 @@ const HW15 = () => {
   const [techs, setTechs] = useState<TechType[]>([]);
 
   const sendQuery = (params: { page: number; count: number }) => {
-    console.log(params);
-
     setLoading(true);
-    getTechs(params).then((res) => {
+    getTechs({ ...params, sort }).then((res) => {
       // делает студент
       // сохранить пришедшие данные
       //
@@ -87,7 +86,7 @@ const HW15 = () => {
     const params = Object.fromEntries(searchParams);
     console.log(params);
 
-    sendQuery({ page: +params.page, count: +params.count });
+    sendQuery({ page: +params.page || page, count: +params.count || count });
     setPage(+params.page || 1);
     setCount(+params.count || 4);
   }, []);
